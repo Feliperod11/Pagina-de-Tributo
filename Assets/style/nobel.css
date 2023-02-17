@@ -1,0 +1,70 @@
+/* CSS */
+
+.nobel-bg {
+  background: #242424 url("../img/detalhes/bolinhas.svg") no-repeat top 94px right 146px;
+}
+
+.nobel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 94px 40px;
+  box-sizing: border-box;
+}
+
+.nobel-conteudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nobel-conteudo h2 {
+  text-align: center;
+}
+
+.nobel-bar {
+  margin-top: 26px;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #393939;
+  border-radius: 4px;
+}
+
+.margin-topo {
+  margin-top: 50px;
+}
+
+.nobel-conteudo p:not(.margin-topo) {
+  margin-top: 34px;
+}
+
+.nobel-conteudo p {
+  max-width: 90ch;
+  color: #b0b0b0;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+  .nobel-bg {
+    background: #242424;
+  }
+}
+
+@media (max-width: 900px) {
+  .nobel-conteudo p {
+    font: 400 16px/26px "Fire Sans", sans-serif !important;
+  }
+  .nobel-bg {
+    background: #242424;
+  }
+}
+
+@media (max-width: 500px) {
+  .nobel-conteudo h2 {
+    font: 700 36px/44px "Fire Sans", sans-serif;
+  }
+}

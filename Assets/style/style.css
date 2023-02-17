@@ -1,0 +1,19 @@
+@import url("./header.css");
+@import url("./intro.css");
+@import url("./biografia.css");
+@import url("./teoria.css");
+@import url("./nobel.css");
+@import url("./global.css");
+@import url("./footer.css");
+
+
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: initial;
+  background: initial;
+}

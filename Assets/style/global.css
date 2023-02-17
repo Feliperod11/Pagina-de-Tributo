@@ -1,0 +1,25 @@
+/* TÍTULOS & PARÁGRAFOS*/
+
+.titulo {
+  font: bold 52px/60px "Fire Sans", sans-serif;
+  color: #f3f3f3;
+}
+
+.paragrafo-f {
+  font: 500 18px/28px "Fire Sans", sans-serif;
+}
+
+
+/* RESPONSIVO GLOBAL */
+
+@media (max-width: 900px) {
+  .titulo-responsive {
+    font: 700 42px/50px "Fire Sans", sans-serif;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-responsive h1 {
+    font: 700 36px/44px "Fire Sans", sans-serif;
+  }
+}

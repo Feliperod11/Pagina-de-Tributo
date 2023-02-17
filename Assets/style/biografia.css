@@ -1,0 +1,131 @@
+/* CSS */
+
+.biografia-bg {
+  background: #242424;
+}
+
+.biografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 94px 40px;
+  box-sizing: border-box;
+}
+
+.biografia-introducao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.biografia .bar {
+  margin-top: 26px;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #393939;
+  border-radius: 4px;
+}
+
+.biografia .biografia-paragrafo {
+  margin-top: 50px;
+}
+
+.biografia .biografia-paragrafo:not(.margin-not) {
+  margin-top: 34px;
+}
+
+.biografia .biografia-paragrafo {
+  max-width: 90ch;
+  color: #b0b0b0;
+}
+
+.biografia .biografia-leia-container a {
+  display: block;
+  margin-top: 12px;
+  font: 500 18px/28px "Fire Sans", sans-serif;
+  color: #666666;
+  text-decoration: underline;
+}
+
+.biografia .biografia-leia-container a:hover {
+  color: #CCCCCC;
+  transition: 1s;
+}
+
+.biografia-titulo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 80px;
+  align-self: flex-start;
+}
+
+.biografia-titulo-container h3 {
+  font: 600 24px/28px "Fire Sans", sans-serif;
+  color: #9b9b9b;
+}
+
+.biografia-titulo-container .titulo-bar {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #393939;
+  border-radius: 4px;
+}
+
+.biografia-frases {
+  margin-top: 32px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.biografia-frases-bloco {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  height: auto;
+  background: #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px 1px #3C3C3C;
+}
+
+.biografia-frases-bloco p {
+  padding: 20px;
+  font: 400 16px/24px "Fire Sans", sans-serif;
+  color: #4b4b4b;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .biografia-paragrafo {
+    font: 400 16px/26px "Fire Sans", sans-serif !important;
+  }
+  .biografia-titulo-container h3 {
+    font: 600 20px/24px "Fire Sans", sans-serif;
+    color: #9b9b9b;
+  }
+  .biografia-titulo-container .titulo-bar {
+    width: 20px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .biografia-introducao h2 {
+    font: 700 36px/44px "Fire Sans", sans-serif;
+  }
+  .biografia-titulo-container h3 {
+    font: 600 16px/20px "Fire Sans", sans-serif;
+    color: #9b9b9b;
+  }
+  .biografia-titulo-container .titulo-bar {
+    width: 20px;
+    height: 4px;
+  }
+}

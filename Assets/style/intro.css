@@ -1,0 +1,80 @@
+/* CSS */
+
+.intro-bg {
+  background: #151414;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 94px 40px;
+  box-sizing: border-box;
+}
+
+.intro-image img {
+  max-width: 100%;
+}
+
+.intro-text .intro-details {
+  font: 600 28px/32px "Fire Sans", sans-serif;
+  color: #393939;
+}
+
+.intro-text h1 {
+  margin: 8px 0px;
+}
+
+.intro-text p {
+  max-width: 50ch;
+  margin-top: 36px;
+  color: #ffffff;
+}
+
+.intro-text-continua {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.intro-text-continua span {
+  font: 600 14px/28px "Fire Sans", sans-serif;
+  color: #393939;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .intro-text .intro-details {
+    font: 600 24px/28px "Fire Sans", sans-serif;
+  }
+  .intro-text p {
+    max-width: 50ch;
+    font: 400 16px/26px "Fire Sans", sans-serif;
+  }
+}
+@media (max-width: 800px) {
+  .intro {
+    text-align: center;
+    flex-direction: column;
+  }
+  .intro-text-continua {
+    justify-content: center;
+  }
+  .intro-image img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .intro-text .intro-details {
+    font: 600 20px/24px "Fire Sans", sans-serif;
+  }
+  .intro-text h1 {
+    font: 700 36px/44px "Fire Sans", sans-serif;
+  }
+  .intro-text p {
+    max-width: initial;
+  }
+}

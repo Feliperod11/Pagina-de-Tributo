@@ -1,0 +1,96 @@
+/* CSS */
+
+.teoria-bg {
+  background: #151414 url("../img/detalhes/bolinhas.svg") no-repeat top 94px right 146px;
+}
+
+.teoria-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 94px 40px;
+  box-sizing: border-box;
+}
+
+.teoria-container-intro h2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.teoria-container-intro h2::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100px;
+  background: #393939;
+  border-radius: 4px;
+}
+
+.teoria-container-intro p {
+  color: #ffffff;
+  max-width: 50ch;
+  margin-top: 50px;
+}
+
+.teoria-img-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.teoria-img-container img {
+  max-width: 100%;
+}
+
+.teoria-img-container span {
+  align-self: center;
+  margin-top: 12px;
+  font: 500 16px/20px "Fire Sans", sans-serif;
+  color: #393939;
+}
+
+.teoria-container-paragrafos p {
+  margin-top: 80px;
+  max-width: 90ch;
+  color: #ffffff;
+}
+
+.teoria-container-paragrafos p:not(.inicio) {
+  margin-top: 34px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+  .teoria-bg {
+    background: #151414;
+  }
+}
+
+@media (max-width: 900px) {
+  .teoria-container-intro h2 {
+    font: 700 42px/50px "Fire Sans", sans-serif;
+  }
+  .teoria-container-intro p, .teoria-container-paragrafos p {
+    font: 400 16px/26px "Fire Sans", sans-serif !important;
+  }
+  .teoria-bg {
+    background: #151414;
+  }
+  .teoria-container-intro h2::before {
+    height: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .teoria-container-intro h2 {
+    font: 700 36px/44px "Fire Sans", sans-serif;
+  }
+  .teoria-container-intro h2::before {
+    height: 60px;
+  }
+}
